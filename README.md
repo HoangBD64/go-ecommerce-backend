@@ -1,1 +1,1 @@
-# go-ecommerce-backend
+# go-backend-ecommerce

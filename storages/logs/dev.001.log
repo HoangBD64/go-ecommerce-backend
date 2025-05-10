@@ -1,0 +1,11 @@
+
+{"level":"INFO","time":"2025-04-12T11:58:02.027+0700","caller":"initialize/redis.go:166","msg":"Initializing Redis Successfully"}
+{"level":"INFO","time":"2025-04-12T11:58:02.031+0700","caller":"initialize/mysql.go:33","msg":"Initializing MySQL Successfully"}
+{"level":"INFO","time":"2025-04-12T11:58:02.031+0700","caller":"initialize/mysqlc.go:20","msg":"Initializing MySQL Successfully sql"}
+{"level":"INFO","time":"2025-04-12T11:58:14.411+0700","caller":"impl/ticket_item_impl.go:76","msg":"LOCK ACQUIRED → QUERY DATABASE →","ticketId":3}
+{"level":"INFO","time":"2025-04-12T13:10:32.653+0700","caller":"initialize/redis.go:166","msg":"Initializing Redis Successfully"}
+{"level":"INFO","time":"2025-04-12T13:10:32.659+0700","caller":"initialize/mysql.go:33","msg":"Initializing MySQL Successfully"}
+{"level":"INFO","time":"2025-04-12T13:10:32.659+0700","caller":"initialize/mysqlc.go:20","msg":"Initializing MySQL Successfully sql"}
+{"level":"INFO","time":"2025-04-27T10:37:26.539+0700","caller":"initialize/mysql.go:33","msg":"Initializing MySQL Successfully"}
+{"level":"INFO","time":"2025-04-27T10:37:26.539+0700","caller":"initialize/mysqlc.go:20","msg":"Initializing MySQL Successfully sql"}
+{"level":"INFO","time":"2025-04-27T10:37:26.547+0700","caller":"initialize/redis.go:220","msg":"Initializing RedisSentinel Successfully"}

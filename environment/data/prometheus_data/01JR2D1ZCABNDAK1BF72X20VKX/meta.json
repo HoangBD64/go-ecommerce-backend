@@ -1,0 +1,17 @@
+{
+	"ulid": "01JR2D1ZCABNDAK1BF72X20VKX",
+	"minTime": 1743573600000,
+	"maxTime": 1743580800000,
+	"stats": {
+		"numSamples": 701244,
+		"numSeries": 604,
+		"numChunks": 6042
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JR2D1ZCABNDAK1BF72X20VKX"
+		]
+	},
+	"version": 1
+}

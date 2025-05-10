@@ -1,0 +1,17 @@
+{
+	"ulid": "01JSTN4BP9Y8871WACX0CQRR32",
+	"minTime": 1744531401697,
+	"maxTime": 1744538400000,
+	"stats": {
+		"numSamples": 2778,
+		"numSeries": 564,
+		"numChunks": 564
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JSTN4BP9Y8871WACX0CQRR32"
+		]
+	},
+	"version": 1
+}

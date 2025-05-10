@@ -1,42 +1,61 @@
 package routers
 
-import (
-	"net/http"
-	"github.com/gin-gonic/gin"
-)
+// import (
+// 	"fmt"
 
-func NewRouter() *gin.Engine{
-	r := gin.Default()
-	v1 := r.Group("/v1/2024") 
-	{
-		v1.GET("/ping", pong)
-		v1.POST("/ping", pong)
-		v1.PUT("/ping", pong)
-		v1.PATCH("/ping", pong)
-		v1.DELETE("/ping", pong)
-		v1.HEAD("/ping", pong)
-		v1.OPTIONS("/ping", pong)
-	}
-	v2 := r.Group("/v2/2024") 
-	{
-		v2.GET("/ping", pong)
-		v2.POST("/ping", pong)
-		v2.PUT("/ping", pong)
-		v2.PATCH("/ping", pong)
-		v2.DELETE("/ping", pong)
-		v2.HEAD("/ping", pong)
-		v2.OPTIONS("/ping", pong)
-	}
-	return r
-}
+// 	c "github.com/anonystick/go-ecommerce-backend-api/internal/controller"
+// 	"github.com/anonystick/go-ecommerce-backend-api/internal/middlewares"
+// 	"github.com/gin-gonic/gin"
+// )
 
-func pong(c *gin.Context) {
-	name := c.DefaultQuery("name", "hoangbd")
+// func AA() gin.HandlerFunc {
+// 	return func(c *gin.Context) {
+// 		fmt.Println("Before -->AA")
+// 		c.Next()
+// 		fmt.Println("Alter -->AA")
 
-	uid := c.Query("uid")
-	c.JSON(http.StatusOK, gin.H{
-		"message": "pong" + name,
-		"uid":     uid,
-		"users":    []string{"nguyen", "dinh", "hoang"},
-	})
-}
+// 	}
+// }
+
+// func BB() gin.HandlerFunc {
+// 	return func(c *gin.Context) {
+// 		fmt.Println("Before -->BB")
+// 		c.Next()
+// 		fmt.Println("Alter -->BB")
+
+// 	}
+// }
+
+// func CC(c *gin.Context) {
+// 	fmt.Println("Before -->CC")
+// 	c.Next()
+// 	fmt.Println("Alter -->CC")
+// }
+
+// func NewRouter() *gin.Engine {
+// 	r := gin.Default()
+// 	// use the middleware
+// 	r.Use(middlewares.AuthenMiddleware(), BB(), CC)
+
+// 	v1 := r.Group("/v1/2024")
+// 	{
+// 		v1.GET("/ping", c.NewPongController().Pong)          // /v1/2024/ping
+// 		v1.GET("/user/1", c.NewUserController().GetUserByID) // /v1/2024/ping
+// 		// v1.PUT("/ping", Pong)
+// 		// v1.PATCH("/ping", Pong)
+// 		// v1.DELETE("/ping", Pong)
+// 		// v1.HEAD("/ping", Pong)
+// 		// v1.OPTIONS("/ping", Pong)
+// 	}
+
+// 	// v2 := r.Group("/v2/2024")
+// 	// {
+// 	// 	v2.GET("/ping", Pong) // /v2/2024/ping
+// 	// 	v2.PUT("/ping", Pong)
+// 	// 	v2.PATCH("/ping", Pong)
+// 	// 	v2.DELETE("/ping", Pong)
+// 	// 	v2.HEAD("/ping", Pong)
+// 	// 	v2.OPTIONS("/ping", Pong)
+// 	// }
+// 	return r
+// }
